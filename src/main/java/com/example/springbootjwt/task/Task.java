@@ -12,9 +12,6 @@ public class Task {
     private long id;
     private String description;
 
-
-
-
     public Task() {
     }
 

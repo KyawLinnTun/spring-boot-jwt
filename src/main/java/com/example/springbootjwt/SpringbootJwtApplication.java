@@ -2,6 +2,8 @@ package com.example.springbootjwt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @SpringBootApplication
 public class SpringbootJwtApplication {
@@ -10,4 +12,8 @@ public class SpringbootJwtApplication {
         SpringApplication.run(SpringbootJwtApplication.class, args);
     }
 
+    @Bean
+   public  BCryptPasswordEncoder bCryptPasswordEncoder(){
+        return  new BCryptPasswordEncoder();
+   }
 }
