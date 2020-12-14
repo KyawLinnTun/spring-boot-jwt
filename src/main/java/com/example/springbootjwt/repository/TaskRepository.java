@@ -1,5 +1,6 @@
 package com.example.springbootjwt.repository;
 
+
 import com.example.springbootjwt.task.Task;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
